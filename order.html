@@ -5,7 +5,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title></title>
+    <title> Корзина </title>
     
     <link rel="stylesheet" href="css/style.css">
     
@@ -97,11 +97,16 @@
                         
                         <input type="text" name="date" id="date" placeholder="ДД-ММ-ГГГГ" autocomplete="off">
                     </fieldset>
- 				   <fieldset>
-                        <legend>Время доставки:</legend>
-                 
-   <input type="text" name="time" id="time" placeholder="ЧЧ:ММ" min="07:01" max="18:00" >
-				</fieldset>                       
+						
+                 <form action="/examples/php-scripts/time.php" method="get">
+<fieldset> <legend>Время доставки:</legend>
+<p><input type="time" name="selected_time" list="time-list"></p>
+<datalist id="time-list">
+<option value="09:00" label="Привозите прям к завтраку">
+<option value="12:00" label="Время обедать!">
+<option value="17:00" label="Можно и перекусить">
+
+   <input type="text" name="time" id="time" placeholder="ЧЧ:ММ" min="07:01" max="18:00" >                      
                     <button type="submit" class="sendform">Отправить</button>
                 </form>
 				
@@ -133,8 +138,8 @@
                     </ul>
                     <ul>
                         <li class="big"><strong>СВЯЗАТЬСЯ С НАМИ</strong></li>
-                        <li><a href=”tel:+79099311888”>+7 (909) 931-18-88</a></li>
-                        <li><a href='mailto:cafelunch@yandex.ru'>cafelunch@yandex.ru</a></li>
+                        <li><a href=”tel:+79099311888” style="color: white">+7 (909) 931-18-88</a></li>
+                        <li><a href='mailto:cafelunch@yandex.ru' style="color: white">cafelunch@yandex.ru</a></li>
                         <li>Пн – пт с 8:00 до 18:00</li>
                     </ul>
                     <ul>

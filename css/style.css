@@ -146,6 +146,7 @@ footer {
     flex: none;
     background: gray;
     color: white;
+	text-decoration:none;
 }
 footer section {
     padding: 16px 0;
@@ -155,7 +156,7 @@ footer section {
     justify-content: space-between;
 }
 .footermenu a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* main */
